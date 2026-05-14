@@ -1,0 +1,967 @@
+{
+  "version": "1.0",
+  "categories": [
+    {
+      "id": "cardiovascular",
+      "nameVn": "Tim mạch",
+      "conditions": [
+        {
+          "id": "htn-controlled",
+          "nameVn": "Tăng huyết áp (kiểm soát tốt)",
+          "nameEn": "Hypertension – controlled",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Tiếp tục thuốc hạ huyết áp buổi sáng với ngụm nước nhỏ (trừ ACEI/ARB nếu phẫu thuật lớn)",
+            "Mục tiêu huyết áp trong mổ: duy trì trong ±20% so với huyết áp nền",
+            "Tránh tăng huyết áp khi đặt NKQ: Fentanyl 1-2 mcg/kg hoặc Lidocaine 1.5 mg/kg IV 90 giây trước"
+          ],
+          "drugCautions": [],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "Kiểm tra huyết áp tại phòng chờ trước mổ (nếu > 180/110 mmHg cân nhắc trì hoãn)",
+            "ECG 12 chuyển đạo"
+          ]
+        },
+        {
+          "id": "htn-uncontrolled",
+          "nameVn": "Tăng huyết áp không kiểm soát (> 180/110)",
+          "nameEn": "Hypertension – uncontrolled",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Xem xét trì hoãn phẫu thuật chương trình để tối ưu hóa huyết áp",
+            "Nguy cơ dao động huyết áp lớn trong mổ — theo dõi IBP nếu ASA III+",
+            "Chuẩn bị sẵn Nicardipine IV hoặc Labetalol IV để kiểm soát tăng huyết áp cấp trong mổ"
+          ],
+          "drugCautions": ["Ketamine (tăng thêm huyết áp)", "Ephedrine liều cao"],
+          "monitoringNeeds": ["Huyết áp xâm lấn (IBP) cho phẫu thuật lớn"],
+          "preOpChecklist": [
+            "Tối ưu hóa thuốc hạ áp trước mổ 2-4 tuần nếu chương trình",
+            "Đánh giá tổn thương cơ quan đích: creatinine, ECG, soi đáy mắt"
+          ]
+        },
+        {
+          "id": "heart-failure",
+          "nameVn": "Suy tim (EF < 40%)",
+          "nameEn": "Heart failure with reduced EF",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Tránh thuốc ức chế cơ tim mạnh: Propofol liều cao, Thiopental — ưu tiên Etomidate cho khởi mê",
+            "Tránh tụt áp: tiêm chậm thuốc khởi mê, chuẩn bị Norepinephrine sẵn",
+            "Dịch truyền thận trọng: theo CVP, tránh quá tải — tham khảo siêu âm tim tiền mổ",
+            "TIVA (Propofol + Remifentanil liều thấp) thường an toàn hơn mê bốc hơi"
+          ],
+          "drugCautions": ["Propofol liều cao", "Halothane", "Thiopental", "Dịch truyền lượng lớn"],
+          "monitoringNeeds": [
+            "Huyết áp xâm lấn (IBP) bắt buộc",
+            "CVP hoặc FloTrac/PICCO để tối ưu tiền gánh",
+            "Xem xét Swan-Ganz catheter cho phẫu thuật tim lớn"
+          ],
+          "preOpChecklist": [
+            "Siêu âm tim đánh giá EF, áp lực buồng tim",
+            "Tối ưu điều trị suy tim (lợi tiểu, ACEI/ARB, beta-blocker) trước mổ chương trình",
+            "Tham khảo tim mạch học nếu EF < 30%"
+          ]
+        },
+        {
+          "id": "cad",
+          "nameVn": "Bệnh mạch vành (đã có stent/CABG hoặc đau ngực ổn định)",
+          "nameEn": "Coronary artery disease",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Tiếp tục aspirin/clopidogrel theo hướng dẫn (ngừng clopidogrel 5-7 ngày trước phẫu thuật lớn nếu có thể)",
+            "Mục tiêu nhịp tim trong mổ 60-70 lần/phút — tránh nhịp nhanh",
+            "Tránh hạ huyết áp kéo dài (nguy cơ thiếu máu cơ tim): duy trì MAP ≥ 65 mmHg"
+          ],
+          "drugCautions": ["Epinephrine liều cao", "Thuốc giãn mạch ngoại vi không chọn lọc"],
+          "monitoringNeeds": [
+            "ECG liên tục — theo dõi ST-segment",
+            "IBP nếu stent < 1 năm hoặc phẫu thuật lớn"
+          ],
+          "preOpChecklist": [
+            "Kiểm tra thời gian stent (stent thường < 1 năm cần kháng kết tập tiểu cầu kép)",
+            "Tham khảo tim mạch học nếu stent < 6 tuần hoặc CABG < 3 tháng"
+          ]
+        },
+        {
+          "id": "arrhythmia",
+          "nameVn": "Rối loạn nhịp tim (rung nhĩ/nhịp nhanh thất)",
+          "nameEn": "Cardiac arrhythmia",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Kiểm tra thuốc kiểm soát nhịp đang dùng — tiếp tục trước mổ",
+            "Rung nhĩ: kiểm soát tần số thất < 100 lần/phút trước mổ",
+            "Chuẩn bị máy khử rung điện sẵn sàng trong phòng mổ"
+          ],
+          "drugCautions": ["Sevoflurane/Halothane (kéo dài QT)", "Succinylcholine (nhịp chậm thoáng qua)"],
+          "monitoringNeeds": ["ECG liên tục 12 chuyển đạo nếu nhịp thất phức tạp"],
+          "preOpChecklist": [
+            "ECG 12 chuyển đạo trước mổ",
+            "Điện giải đồ (K+, Mg²⁺ — rối loạn điện giải làm nặng thêm loạn nhịp)"
+          ]
+        },
+        {
+          "id": "pacemaker-icd",
+          "nameVn": "Máy tạo nhịp / ICD",
+          "nameEn": "Pacemaker / ICD",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Liên hệ chuyên gia tim mạch/kỹ thuật viên thiết bị trước mổ để lập trình lại nếu cần",
+            "Đặt tấm chống xung kính (bovie pad) xa thiết bị nhất có thể",
+            "Chuẩn bị nam châm ICD sẵn sàng để tạm thời vô hiệu hóa ICD khi dùng dao điện",
+            "Điện cực tạo nhịp ngoài da phòng ngừa sẵn sàng"
+          ],
+          "drugCautions": ["Dao điện đơn cực (dùng lưỡng cực ưu tiên)"],
+          "monitoringNeeds": ["ECG liên tục — kiểm tra tín hiệu tạo nhịp"],
+          "preOpChecklist": [
+            "Xác nhận loại thiết bị và cài đặt hiện tại",
+            "Lập trình ICD sang mode 'off' hoặc dùng nam châm trong mổ",
+            "Kiểm tra pin thiết bị"
+          ]
+        },
+        {
+          "id": "aortic-stenosis",
+          "nameVn": "Hẹp van động mạch chủ nặng",
+          "nameEn": "Severe aortic stenosis",
+          "asaMinimum": "IV",
+          "anaesthesiaConsiderations": [
+            "Nguy cơ rất cao — tham khảo tim mạch học trước mổ không phải cấp cứu",
+            "Duy trì nhịp xoang — tránh rung nhĩ mới",
+            "Tránh tụt áp: nhịp tim bình thường, tăng tiền gánh, tránh giãn mạch đột ngột",
+            "Etomidate cho khởi mê — tránh Propofol hoặc Thiopental liều chuẩn"
+          ],
+          "drugCautions": ["Propofol liều cao", "Thiopental", "Spinal một liều (gây tụt áp nhanh)"],
+          "monitoringNeeds": ["IBP bắt buộc", "CVP", "Siêu âm tim qua thực quản (TEE) nếu có"],
+          "preOpChecklist": [
+            "Siêu âm tim: gradient qua van, diện tích van, EF",
+            "Xem xét TAVR/phẫu thuật van trước phẫu thuật chương trình lớn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "respiratory",
+      "nameVn": "Hô hấp",
+      "conditions": [
+        {
+          "id": "copd-mild",
+          "nameVn": "COPD nhẹ-trung bình (GOLD I-II)",
+          "nameEn": "COPD mild-moderate",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Tiếp tục thuốc giãn phế quản trước mổ (kể cả buổi sáng ngày mổ)",
+            "Thông khí bảo vệ phổi: TV thấp (6 mL/kg IBW), PEEP 5 cmH₂O, tránh tự kiểm phổi",
+            "Ưu tiên tê vùng nếu có thể để tránh biến chứng hô hấp sau mổ"
+          ],
+          "drugCautions": ["Morphine (ức chế hô hấp — dùng thận trọng, tiêm chậm)"],
+          "monitoringNeeds": ["SpO₂ liên tục", "EtCO₂ nếu có NKQ"],
+          "preOpChecklist": [
+            "Spirometry (FEV1/FVC, FEV1% predicted)",
+            "Tối ưu phòng giãn phế quản 2-4 tuần trước mổ chương trình"
+          ]
+        },
+        {
+          "id": "copd-severe",
+          "nameVn": "COPD nặng (GOLD III-IV, FEV1 < 50%)",
+          "nameEn": "COPD severe",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Nguy cơ cao biến chứng hô hấp sau mổ — cân nhắc ICU sau mổ",
+            "TIVA hoặc tê vùng ưu tiên hơn mê bốc hơi",
+            "Thở máy: tần số thấp (10-12 lần/phút), thời gian thở ra dài (I:E = 1:3 đến 1:4)",
+            "Rút NKQ cực kỳ thận trọng — đảm bảo đảo ngược giãn cơ hoàn toàn, SpO₂ > 95%"
+          ],
+          "drugCautions": ["Opioid (ức chế hô hấp sau mổ)", "Benzodiazepine liều cao"],
+          "monitoringNeeds": ["SpO₂ + EtCO₂ liên tục", "ABG trước và sau mổ nếu phẫu thuật lớn"],
+          "preOpChecklist": [
+            "Spirometry, khí máu động mạch (PaO₂, PaCO₂)",
+            "XQ phổi",
+            "Tham khảo hô hấp học nếu FEV1 < 35%"
+          ]
+        },
+        {
+          "id": "asthma",
+          "nameVn": "Hen phế quản",
+          "nameEn": "Bronchial asthma",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Tiếp tục tất cả thuốc hen (ICS, LABA, thuốc cứu cánh) — xịt Salbutamol 2 nhát trước khởi mê",
+            "Khởi mê sâu trước đặt NKQ để tránh co thắt phế quản phản xạ",
+            "Ketamine là thuốc khởi mê lý tưởng (giãn phế quản), Propofol cũng được",
+            "Tránh thuốc giải phóng histamine: Atracurium, Morphine — ưu tiên Rocuronium, Fentanyl"
+          ],
+          "drugCautions": ["Atracurium (giải phóng histamine)", "Morphine (giải phóng histamine)", "Neostigmine (có thể gây co thắt)"],
+          "monitoringNeeds": ["EtCO₂ và áp lực đường thở liên tục"],
+          "preOpChecklist": [
+            "Đánh giá kiểm soát hen: không cơn trong 4-6 tuần",
+            "Spirometry nếu hen trung bình-nặng",
+            "Kiểm tra peak flow ngày mổ"
+          ]
+        },
+        {
+          "id": "osa",
+          "nameVn": "Hội chứng ngưng thở khi ngủ (OSA)",
+          "nameEn": "Obstructive sleep apnea",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Rút NKQ trong tư thế nửa ngồi (không nằm ngửa phẳng) — giảm tắc nghẽn đường thở",
+            "Opioid sau mổ thận trọng — ưu tiên đa mô thức (NSAID, Paracetamol, tê vùng)",
+            "Yêu cầu bệnh nhân mang máy CPAP từ nhà nếu có",
+            "Nguy cơ đặt NKQ khó — thường có cổ ngắn, béo phì"
+          ],
+          "drugCautions": ["Opioid liều cao sau mổ", "Benzodiazepine (tránh dùng sau mổ)"],
+          "monitoringNeeds": ["SpO₂ liên tục ít nhất 24h sau mổ nếu phẫu thuật lớn"],
+          "preOpChecklist": [
+            "Đánh giá STOP-BANG score",
+            "Hỏi về máy CPAP/BiPAP tại nhà",
+            "Đánh giá Mallampati và các dấu hiệu đặt NKQ khó"
+          ]
+        },
+        {
+          "id": "pulmonary-htn",
+          "nameVn": "Tăng áp động mạch phổi",
+          "nameEn": "Pulmonary arterial hypertension",
+          "asaMinimum": "IV",
+          "anaesthesiaConsiderations": [
+            "Nguy cơ rất cao — tham khảo chuyên khoa tim mạch phổi trước mổ chương trình",
+            "Tránh giảm tải trước tim đột ngột, tăng kháng lực phổi (thiếu oxy, toan hóa, đau)",
+            "Tiếp tục tất cả thuốc điều trị PAH đến ngày mổ",
+            "Chuẩn bị iNO (nitric oxide dạng hít) hoặc Epoprostenol dự phòng"
+          ],
+          "drugCautions": ["Protamine (có thể gây tăng áp phổi cấp)", "Thuốc giãn mạch hệ thống mà không giãn mạch phổi"],
+          "monitoringNeeds": ["IBP", "CVP", "PAP nếu có thể"],
+          "preOpChecklist": [
+            "Siêu âm tim đánh giá áp lực phổi và chức năng thất phải",
+            "Tham khảo tim mạch học và gây mê chuyên biệt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "endocrine",
+      "nameVn": "Nội tiết — Chuyển hóa",
+      "conditions": [
+        {
+          "id": "dm-type2",
+          "nameVn": "Đái tháo đường type 2 (kiểm soát tốt)",
+          "nameEn": "Type 2 diabetes mellitus – controlled",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Kiểm soát glucose 6-10 mmol/L trong chu phẫu thuật",
+            "Ngừng Metformin 24-48h trước mổ, điều chỉnh insulin",
+            "Kiểm tra glucose mỗi giờ trong mổ kéo dài"
+          ],
+          "drugCautions": ["Glucocorticoid (tăng glucose)", "Dextrose truyền nhanh"],
+          "monitoringNeeds": ["Glucose máu mỗi 1-2h"],
+          "preOpChecklist": [
+            "HbA1c (mục tiêu < 8.5% để mổ an toàn)",
+            "Glucose máu buổi sáng ngày mổ",
+            "Ngừng SGLT-2 inhibitor (Empagliflozin, Dapagliflozin) 3-4 ngày trước mổ"
+          ]
+        },
+        {
+          "id": "dm-uncontrolled",
+          "nameVn": "Đái tháo đường không kiểm soát (HbA1c > 9%)",
+          "nameEn": "Diabetes mellitus – uncontrolled",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Xem xét trì hoãn phẫu thuật chương trình để tối ưu glucose",
+            "Truyền Insulin theo phác đồ GIK nếu glucose > 14 mmol/L",
+            "Chú ý biến chứng: neuropathy tự chủ (hạ áp tư thế, làm chậm rỗng dạ dày)"
+          ],
+          "drugCautions": ["Metformin (dừng 24-48h)", "SGLT-2 inhibitor (dừng 3-4 ngày)"],
+          "monitoringNeeds": ["Glucose máu mỗi 30-60 phút"],
+          "preOpChecklist": [
+            "HbA1c, glucose, ceton niệu",
+            "Đánh giá biến chứng ĐTĐ: thận (creatinine), tim (ECG), thần kinh",
+            "Tham khảo nội tiết nếu HbA1c > 10%"
+          ]
+        },
+        {
+          "id": "obesity",
+          "nameVn": "Béo phì (BMI 30-39)",
+          "nameEn": "Obesity",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Dùng cân nặng lý tưởng (IBW) hoặc cân nặng điều chỉnh (ABW) để tính liều thuốc",
+            "Tiền oxy hóa 3-5 phút — dự trữ oxy kém hơn do FRC giảm",
+            "Đặt NKQ tư thế đầu cao 20-30° (beach chair) — cải thiện view thanh quản",
+            "Dự phòng PONV mạnh hơn (ít nhất 2 thuốc)"
+          ],
+          "drugCautions": ["Succinylcholine (tính liều theo cân nặng thực)", "Benzodiazepine sau mổ (tránh nếu có OSA)"],
+          "monitoringNeeds": ["SpO₂ — rút NKQ tư thế đầu cao"],
+          "preOpChecklist": [
+            "Tầm soát OSA (STOP-BANG)",
+            "Đánh giá đường thở (Mallampati, mở miệng, cử động cổ)"
+          ]
+        },
+        {
+          "id": "morbid-obesity",
+          "nameVn": "Béo phì bệnh lý (BMI ≥ 40)",
+          "nameEn": "Morbid obesity",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Đường thở khó dự kiến — chuẩn bị video laryngoscope ngay từ đầu",
+            "RSI cân nhắc vì nguy cơ trào ngược (áp lực dạ dày cao)",
+            "Thông khí bảo vệ phổi nghiêm ngặt (tư thế đầu cao, PEEP cao, TV 6 mL/kg IBW)",
+            "ICU sau mổ nếu phẫu thuật lớn + SpO₂ thấp"
+          ],
+          "drugCautions": ["Opioid sau mổ (ức chế hô hấp + OSA)", "Succinylcholine (dùng cân nặng thực — liều cao)"],
+          "monitoringNeeds": ["SpO₂ liên tục sau mổ ít nhất 24h", "Theo dõi EtCO₂ sau rút NKQ"],
+          "preOpChecklist": [
+            "Spirometry, khí máu động mạch",
+            "ECG, siêu âm tim nếu ASA III+",
+            "Polysomnography nếu nghi ngờ OSA nặng"
+          ]
+        },
+        {
+          "id": "hypothyroidism",
+          "nameVn": "Suy giáp",
+          "nameEn": "Hypothyroidism",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Tiếp tục Levothyroxine đến ngày mổ — T4 có bán thải dài, không cần ngừng",
+            "Suy giáp nặng chưa điều trị: nguy cơ suy tim, hạ nhiệt, hạ natri — trì hoãn nếu có thể",
+            "Nhạy cảm hơn với thuốc mê và opioid — giảm liều 20-30%"
+          ],
+          "drugCautions": ["Opioid liều cao (nhạy cảm hơn)"],
+          "monitoringNeeds": ["Nhiệt độ lõi trong mổ dài"],
+          "preOpChecklist": [
+            "TSH, FT4 trước mổ chương trình",
+            "Kiểm tra rối loạn điện giải (hạ natri) nếu suy giáp nặng"
+          ]
+        },
+        {
+          "id": "hyperthyroidism",
+          "nameVn": "Cường giáp",
+          "nameEn": "Hyperthyroidism",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Nguy cơ bão giáp trong mổ (thyroid storm) nếu chưa kiểm soát — TRÁNH MỔ CHƯƠNG TRÌNH",
+            "Kiểm soát nhịp tim < 90 lần/phút bằng beta-blocker trước mổ",
+            "Tránh các yếu tố kích bão giáp: đau, căng thẳng, nhiễm khuẩn",
+            "Chuẩn bị điều trị bão giáp: Propylthiouracil, beta-blocker, dung dịch Lugol, hydrocortisone"
+          ],
+          "drugCautions": ["Ketamine (kích thích giao cảm)", "Atropine (tăng nhịp tim)"],
+          "monitoringNeeds": ["ECG — kiểm soát nhịp tim liên tục", "Nhiệt độ"],
+          "preOpChecklist": [
+            "TSH, FT3, FT4 — đạt trạng thái bình giáp trước mổ",
+            "Propranolol hoặc Atenolol kiểm soát nhịp trước mổ 2-4 tuần"
+          ]
+        },
+        {
+          "id": "pheochromocytoma",
+          "nameVn": "U tủy thượng thận (Pheochromocytoma)",
+          "nameEn": "Pheochromocytoma",
+          "asaMinimum": "IV",
+          "anaesthesiaConsiderations": [
+            "Cực kỳ nguy hiểm — tham khảo chuyên khoa nội tiết và gây mê kinh nghiệm",
+            "Tiền mê alpha-blocker (Phenoxybenzamine) ≥ 10-14 ngày trước mổ bắt buộc",
+            "Tránh tất cả thuốc kích thích catecholamine: Ketamine, Ephedrine, Atropine",
+            "Chuẩn bị Phentolamine IV sẵn sàng để xử lý tăng huyết áp cấp khi bóc u"
+          ],
+          "drugCautions": ["Ketamine", "Ephedrine", "Atropine", "Morphine (giải phóng histamine)", "Succinylcholine (kích thích hạch)"],
+          "monitoringNeeds": ["IBP bắt buộc", "CVP", "Theo dõi huyết áp liên tục"],
+          "preOpChecklist": [
+            "Metanephrine nước tiểu 24h hoặc plasma free metanephrine",
+            "Alpha-blockade đầy đủ ≥ 2 tuần trước mổ",
+            "Bổ sung beta-blocker chỉ sau khi đã alpha-blockade"
+          ]
+        },
+        {
+          "id": "adrenal-insufficiency",
+          "nameVn": "Thiếu vỏ thượng thận / Đang dùng corticosteroid dài ngày",
+          "nameEn": "Adrenal insufficiency / Chronic steroid use",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Bổ sung corticosteroid trước mổ (Stress dose steroids) theo phác đồ",
+            "Phẫu thuật nhỏ: Hydrocortisone 25 mg IV tại khởi mê",
+            "Phẫu thuật vừa: Hydrocortisone 50-75 mg/ngày trong 1-2 ngày",
+            "Phẫu thuật lớn: Hydrocortisone 100-150 mg/ngày trong 2-3 ngày"
+          ],
+          "drugCautions": ["Etomidate (ức chế vỏ thượng thận — tránh dùng kéo dài hoặc cho bệnh nhân đang dùng steroid liều cao)"],
+          "monitoringNeeds": ["Glucose máu trong mổ", "Huyết áp — tụt áp khi không đủ steroid"],
+          "preOpChecklist": [
+            "Xác nhận liều corticosteroid hiện tại và thời gian dùng",
+            "Điện giải đồ (hạ natri, tăng kali trong thiếu vỏ thượng thận)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neurological",
+      "nameVn": "Thần kinh",
+      "conditions": [
+        {
+          "id": "epilepsy",
+          "nameVn": "Động kinh (đang điều trị)",
+          "nameEn": "Epilepsy",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Tiếp tục tất cả thuốc chống động kinh đến ngày mổ — kể cả buổi sáng",
+            "Tránh Methohexital và Etomidate (có thể gây cơn co giật)",
+            "Sevoflurane liều cao (> 1.5 MAC) có thể kích thích não — tránh ở bệnh nhân khó kiểm soát",
+            "Duy trì oxy hóa tốt — thiếu oxy là yếu tố khởi phát cơn"
+          ],
+          "drugCautions": ["Methohexital", "Etomidate (thận trọng)", "Enflurane (tránh)"],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "Xác nhận cơn động kinh gần nhất và tần số",
+            "Nồng độ thuốc chống động kinh huyết thanh nếu có nghi ngờ"
+          ]
+        },
+        {
+          "id": "stroke-old",
+          "nameVn": "Tiền sử đột quỵ / TIA (> 3 tháng)",
+          "nameEn": "Prior stroke / TIA",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Duy trì huyết áp trong mổ trong giới hạn bình thường — tránh tụt áp kéo dài",
+            "Tiếp tục thuốc chống kết tập tiểu cầu theo hướng dẫn (aspirin thường tiếp tục)",
+            "Tránh Succinylcholine nếu liệt ngoại biên (tăng Kali máu nguy hiểm)"
+          ],
+          "drugCautions": ["Succinylcholine (nếu liệt ngoại biên > 24h — nguy cơ tăng Kali)"],
+          "monitoringNeeds": ["Huyết áp MAP > 65 mmHg liên tục"],
+          "preOpChecklist": [
+            "Đánh giá mức độ hồi phục thần kinh",
+            "MRI sọ não nếu triệu chứng mới hoặc không ổn định"
+          ]
+        },
+        {
+          "id": "parkinson",
+          "nameVn": "Bệnh Parkinson",
+          "nameEn": "Parkinson's disease",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Tiếp tục Levodopa đến sát giờ mổ — ngừng thuốc > 6-12h gây rối loạn nghiêm trọng",
+            "Tránh Metoclopramide, Haloperidol, Droperidol (đối kháng Dopamine)",
+            "Ondansetron là thuốc chống nôn an toàn nhất cho bệnh nhân Parkinson"
+          ],
+          "drugCautions": ["Metoclopramide", "Haloperidol", "Droperidol", "Phenothiazine"],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "Kế hoạch thời gian dùng Levodopa ngày mổ",
+            "Đánh giá mức độ cứng cơ và run — ảnh hưởng đến tư thế"
+          ]
+        },
+        {
+          "id": "myasthenia-gravis",
+          "nameVn": "Nhược cơ (Myasthenia Gravis)",
+          "nameEn": "Myasthenia gravis",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "CỰC KỲ NHẠY CẢM với giãn cơ không khử cực — giảm liều 75-90% hoặc TRÁNH DÙNG",
+            "Succinylcholine có thể cần liều cao hơn (kháng ở thể nặng)",
+            "TOF monitoring bắt buộc nếu dùng giãn cơ",
+            "Nguy cơ thở máy kéo dài sau mổ — thông báo ICU sẵn sàng"
+          ],
+          "drugCautions": ["Rocuronium/Vecuronium/Atracurium (giảm liều 75-90%)", "Aminoglycoside (tăng nhược cơ)"],
+          "monitoringNeeds": ["TOF monitoring bắt buộc", "Đánh giá hô hấp tự thở sau mổ"],
+          "preOpChecklist": [
+            "Đánh giá mức độ nhược cơ (thang Osserman)",
+            "Chức năng phổi: FVC, NIF (negative inspiratory force)",
+            "Ngừng Pyridostigmine 6h trước mổ nếu có thể (giảm tiết, run cơ)"
+          ]
+        },
+        {
+          "id": "icp-elevated",
+          "nameVn": "Tăng áp lực nội sọ",
+          "nameEn": "Elevated intracranial pressure",
+          "asaMinimum": "IV",
+          "anaesthesiaConsiderations": [
+            "Tránh mọi tác nhân tăng ICP: ho, rặn, tăng PaCO₂, tụt áp, tắc tĩnh mạch cổ",
+            "Đặt đầu cao 15-30° — dẫn lưu tĩnh mạch não",
+            "Kiểm soát CO₂: PaCO₂ 35-40 mmHg (không tăng thông khí quá mức trong mổ thần kinh thường quy)",
+            "Thiopental hoặc Propofol làm giảm ICP — ưu tiên hơn Ketamine"
+          ],
+          "drugCautions": ["Ketamine (tăng ICP)", "Succinylcholine (tăng ICP thoáng qua)", "Halothane (giãn mạch não)"],
+          "monitoringNeeds": ["IBP bắt buộc", "ICP monitoring nếu đặt sẵn", "EtCO₂ duy trì 35-40 mmHg"],
+          "preOpChecklist": [
+            "CT/MRI sọ não đánh giá mức độ phù não, thoát vị",
+            "Osmotherapy: Mannitol 0.25-0.5 g/kg IV hoặc NaCl 3% có thể cần trước khi mổ cấp cứu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renal",
+      "nameVn": "Thận",
+      "conditions": [
+        {
+          "id": "ckd-mild",
+          "nameVn": "Suy thận mạn giai đoạn 3 (GFR 30-60)",
+          "nameEn": "CKD stage 3",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Tránh NSAID (tăng nguy cơ suy thận cấp trên nền mạn)",
+            "Atracurium/Cisatracurium là giãn cơ an toàn nhất (thải qua Hofmann, không tích lũy trong suy thận)",
+            "Sugammadex an toàn để đảo ngược Rocuronium — Neostigmine có thể tích lũy"
+          ],
+          "drugCautions": ["NSAID", "Neostigmine (tích lũy)", "Aminoglycoside", "Morphine (chất chuyển hóa tích lũy)"],
+          "monitoringNeeds": ["Nước tiểu trong mổ", "Creatinine sau mổ"],
+          "preOpChecklist": [
+            "Creatinine, eGFR, điện giải (K+)",
+            "Kiểm tra K+ < 5.5 mEq/L trước mổ — tăng kali nguy hiểm với Succinylcholine"
+          ]
+        },
+        {
+          "id": "esrd-dialysis",
+          "nameVn": "Suy thận giai đoạn cuối — đang lọc thận",
+          "nameEn": "ESRD on dialysis",
+          "asaMinimum": "IV",
+          "anaesthesiaConsiderations": [
+            "Lọc thận ngay trước mổ nếu có thể — đảm bảo K+ < 5.5 mEq/L, dịch phân phối bình thường",
+            "TUYỆT ĐỐI TRÁNH Succinylcholine (nguy cơ tăng kali tim ngừng) trừ cấp cứu và K+ bình thường",
+            "Atracurium hoặc Cisatracurium là giãn cơ của lựa chọn",
+            "Tránh dùng dịch có Kali (Lactated Ringer's có 4 mEq/L K+ — dùng NaCl 0.9%)"
+          ],
+          "drugCautions": ["Succinylcholine (tuyệt đối tránh nếu K+ > 5.5)", "Morphine (chất chuyển hóa tích lũy M6G)", "NSAID", "Lactated Ringer's (kali)"],
+          "monitoringNeeds": ["ECG — phát hiện tăng kali (T cao nhọn)", "Nước tiểu (có thể không có)", "IBP cho phẫu thuật lớn"],
+          "preOpChecklist": [
+            "K+ buổi sáng ngày mổ — phải < 5.5 mEq/L",
+            "Lọc thận ngày hôm trước hoặc sáng ngày mổ (nếu lọc thận chu kỳ)",
+            "Đánh giá đường fistula/graft — không lấy ven, đo áp ở tay có fistula"
+          ]
+        },
+        {
+          "id": "kidney-transplant",
+          "nameVn": "Thận ghép (đang dùng thuốc ức chế miễn dịch)",
+          "nameEn": "Renal transplant",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Tiếp tục tất cả thuốc ức chế miễn dịch (Tacrolimus, Cyclosporine, MMF) không được gián đoạn",
+            "Chức năng thận thay đổi — đánh giá GFR hiện tại (không dựa vào tiền sử trước ghép)",
+            "Tránh NSAID, thuốc độc thận",
+            "Nguy cơ nhiễm khuẩn cao — kháng sinh dự phòng cẩn thận, vô khuẩn nghiêm ngặt"
+          ],
+          "drugCautions": ["NSAID", "Aminoglycoside", "Amphotericin B"],
+          "monitoringNeeds": ["Creatinine trước và sau mổ", "Nước tiểu trong mổ"],
+          "preOpChecklist": [
+            "Chức năng thận: creatinine, eGFR",
+            "Nồng độ Tacrolimus/Cyclosporine huyết thanh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hepatic",
+      "nameVn": "Gan",
+      "conditions": [
+        {
+          "id": "hepatitis-chronic",
+          "nameVn": "Viêm gan mạn (B hoặc C)",
+          "nameEn": "Chronic hepatitis B/C",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Tránh Halothane (hepatotoxic) — dùng Sevoflurane hoặc Desflurane an toàn hơn",
+            "Thận trọng với thuốc chuyển hóa qua gan: liều thấp hơn nếu chức năng gan giảm",
+            "Nguy cơ nhiễm máu — tuân thủ phòng ngừa phơi nhiễm cho nhân viên"
+          ],
+          "drugCautions": ["Halothane (tránh)", "Atracurium (tốt hơn khi suy gan — không qua gan)"],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "ALT, AST, bilirubin, albumin, PT/INR",
+            "HBsAg, Anti-HCV — thông báo phòng mổ"
+          ]
+        },
+        {
+          "id": "cirrhosis-mild",
+          "nameVn": "Xơ gan Child-Pugh A",
+          "nameEn": "Cirrhosis Child-Pugh A",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Rối loạn đông máu — kiểm tra PT/INR, bổ sung FFP/vitamin K nếu cần",
+            "Atracurium hoặc Cisatracurium ưu tiên (không chuyển hóa qua gan)",
+            "Tránh tụt áp kéo dài (tưới máu gan đã giảm)",
+            "Cổ trướng làm tăng nguy cơ trào ngược — xem xét RSI"
+          ],
+          "drugCautions": ["Halothane", "Morphine (chuyển hóa qua gan — tích lũy)", "Thuốc kết hợp protein cao"],
+          "monitoringNeeds": ["Glucose máu trong mổ dài", "PT/INR theo dõi"],
+          "preOpChecklist": [
+            "Điểm Child-Pugh và MELD",
+            "PT/INR, albumin, bilirubin",
+            "Glucose (gan suy → dễ hạ glucose)",
+            "Siêu âm bụng đánh giá cổ trướng"
+          ]
+        },
+        {
+          "id": "cirrhosis-severe",
+          "nameVn": "Xơ gan Child-Pugh B-C",
+          "nameEn": "Cirrhosis Child-Pugh B-C",
+          "asaMinimum": "IV",
+          "anaesthesiaConsiderations": [
+            "Nguy cơ rất cao — MELD score > 20 liên quan tử vong chu phẫu thuật > 50%",
+            "Tham khảo chuyên khoa tiêu hóa/ghép gan trước phẫu thuật chương trình",
+            "Rối loạn đông máu nặng — cần bổ sung FFP, Vitamin K, tiểu cầu",
+            "Bệnh não gan — tránh opioid, benzodiazepin"
+          ],
+          "drugCautions": ["Morphine/Opioid (bệnh não gan)", "Benzodiazepine", "Succinylcholine (kéo dài nếu giảm pseudocholinesterase)"],
+          "monitoringNeeds": ["IBP", "CVP", "Glucose thường xuyên", "Lactate"],
+          "preOpChecklist": [
+            "MELD score, Child-Pugh",
+            "Đông máu toàn bộ: PT, APTT, fibrinogen, tiểu cầu, TEG nếu có",
+            "Xem xét FFP tươi đông lạnh và Vitamin K trước mổ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hematologic",
+      "nameVn": "Huyết học — Đông máu",
+      "conditions": [
+        {
+          "id": "anemia-mild",
+          "nameVn": "Thiếu máu nhẹ (Hgb 10-12 g/dL)",
+          "nameEn": "Mild anemia",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Ngưỡng truyền máu: Hgb < 8 g/dL (Hgb < 10 g/dL nếu bệnh tim/phổi nặng)",
+            "Chuẩn bị máu cho phẫu thuật có nguy cơ mất máu",
+            "Tối ưu hóa trước mổ: Sắt IV/PO nếu thiếu máu thiếu sắt"
+          ],
+          "drugCautions": [],
+          "monitoringNeeds": ["Hemoglobin intraop nếu mất máu nhiều"],
+          "preOpChecklist": [
+            "CBC, ferritin, TIBC",
+            "Điều trị nguyên nhân: bổ sung sắt, B12, EPO nếu cần 2-4 tuần trước mổ"
+          ]
+        },
+        {
+          "id": "anemia-severe",
+          "nameVn": "Thiếu máu nặng (Hgb < 8 g/dL)",
+          "nameEn": "Severe anemia",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Trì hoãn phẫu thuật chương trình nếu Hgb < 8 g/dL — tối ưu hóa trước",
+            "Chuẩn bị ít nhất 2 đơn vị hồng cầu lắng trước mổ",
+            "Theo dõi SpO₂, ECG (ST) chặt chẽ — tưới máu cơ quan giảm"
+          ],
+          "drugCautions": [],
+          "monitoringNeeds": ["Hemoglobin theo dõi trong mổ", "ECG continuous"],
+          "preOpChecklist": [
+            "Định nhóm máu và cross-match",
+            "Xác định nguyên nhân và điều trị trước mổ",
+            "Chuẩn bị tự truyền máu (autologous) nếu chương trình"
+          ]
+        },
+        {
+          "id": "antiplatelet",
+          "nameVn": "Đang dùng thuốc kháng kết tập tiểu cầu (Aspirin/Clopidogrel)",
+          "nameEn": "Antiplatelet therapy",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Aspirin thường tiếp tục cho phẫu thuật tim mạch và nguy cơ tim cao",
+            "Clopidogrel: ngừng 5-7 ngày trước phẫu thuật lớn (trừ stent < 1 năm)",
+            "Tê trục thần kinh: clopidogrel ngừng 7 ngày, aspirin thường an toàn nếu đơn độc",
+            "Desmopressin 0.3 mcg/kg IV có thể cải thiện chức năng tiểu cầu trong phẫu thuật cấp cứu"
+          ],
+          "drugCautions": ["Cân nhắc ngưng Clopidogrel 5-7 ngày trước phẫu thuật lớn"],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "Xác nhận loại và thời gian ngừng thuốc với bác sĩ tim mạch",
+            "Đánh giá nguy cơ huyết khối vs nguy cơ xuất huyết"
+          ]
+        },
+        {
+          "id": "anticoagulation",
+          "nameVn": "Đang dùng thuốc kháng đông (Warfarin/NOAC)",
+          "nameEn": "Anticoagulation therapy",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Warfarin: ngừng 5 ngày, kiểm tra INR < 1.5 trước mổ. Bridge bằng LMWH nếu chỉ định",
+            "NOAC (Rivaroxaban, Apixaban): ngừng 24-48h (GFR > 50) hoặc 48-72h (GFR < 50)",
+            "TÊ TRỤC THẦN KINH: tuân thủ nghiêm ngặt thời gian ngừng thuốc theo ASRA guidelines",
+            "Phẫu thuật cấp cứu: Vitamin K IV cho warfarin, Andexanet/Idarucizumab cho NOAC"
+          ],
+          "drugCautions": ["Tê trục thần kinh cần khoảng cách ngừng thuốc đủ theo ASRA"],
+          "monitoringNeeds": ["INR/Anti-Xa trước mổ"],
+          "preOpChecklist": [
+            "Xác nhận loại thuốc kháng đông và liều",
+            "INR nếu Warfarin — phải < 1.5 trước phẫu thuật lớn",
+            "Lên kế hoạch bridge anticoagulation với tim mạch học"
+          ]
+        },
+        {
+          "id": "thrombocytopenia",
+          "nameVn": "Giảm tiểu cầu (< 100,000/μL)",
+          "nameEn": "Thrombocytopenia",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Ngưỡng truyền tiểu cầu: < 50,000 cho phẫu thuật thường, < 100,000 cho thần kinh/mắt",
+            "Tê trục thần kinh cần tiểu cầu ≥ 80,000/μL (xem xét cá thể hóa)",
+            "Tìm nguyên nhân: ITP, DIC, hóa trị — điều trị theo nguyên nhân trước mổ"
+          ],
+          "drugCautions": ["NSAID (ức chế thêm chức năng tiểu cầu)", "Heparin nếu HIT"],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "Đếm tiểu cầu ngày mổ",
+            "Xác định nguyên nhân giảm tiểu cầu",
+            "Chuẩn bị tiểu cầu nếu cần"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "musculoskeletal",
+      "nameVn": "Cơ xương khớp",
+      "conditions": [
+        {
+          "id": "rheumatoid-arthritis",
+          "nameVn": "Viêm khớp dạng thấp",
+          "nameEn": "Rheumatoid arthritis",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Đánh giá đường thở cẩn thận: cứng khớp thái dương hàm, không ổn định cột sống cổ (atlanto-axial instability)",
+            "XQ cột sống cổ tư thế gấp/duỗi nếu nghi ngờ không ổn định — đặt NKQ nhẹ nhàng",
+            "Tiếp tục thuốc DMARDs (trừ Methotrexate cân nhắc ngừng 1-2 tuần trước mổ lớn)",
+            "Khớp giòn — tư thế nhẹ nhàng, đệm bảo vệ tất cả khớp"
+          ],
+          "drugCautions": ["Methotrexate (cân nhắc ngừng trước mổ lớn)", "NSAID (ngừng 5-7 ngày nếu có nguy cơ chảy máu)"],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "XQ cột sống cổ tư thế trung tính và gấp duỗi",
+            "Đánh giá mở miệng và cử động cổ"
+          ]
+        },
+        {
+          "id": "ankylosing-spondylitis",
+          "nameVn": "Viêm cột sống dính khớp",
+          "nameEn": "Ankylosing spondylitis",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Đường thở khó tiềm ẩn — cột sống cổ và ngực dính cứng, không thể ngả cổ",
+            "Fiberoptic intubation tỉnh có thể là lựa chọn duy nhất an toàn",
+            "Tê trục thần kinh khó do các gai sống dính — fenestrectomy có thể cần",
+            "Tư thế trong mổ thách thức — không ép mạnh, không thay đổi đường cong sinh lý cột sống"
+          ],
+          "drugCautions": [],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "XQ/CT cột sống cổ và ngực đánh giá mức độ dính",
+            "Đánh giá khả năng mở miệng, cử động cổ và hàm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychiatric",
+      "nameVn": "Tâm thần — Thần kinh tâm lý",
+      "conditions": [
+        {
+          "id": "depression",
+          "nameVn": "Trầm cảm (đang điều trị SSRI/SNRI)",
+          "nameEn": "Depression on antidepressants",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Tiếp tục SSRI/SNRI đến ngày mổ",
+            "Tránh Tramadol + SSRI (nguy cơ hội chứng serotonin)",
+            "Ondansetron có thể giảm hiệu quả SSRI — Dexamethasone là thuốc chống nôn thay thế tốt"
+          ],
+          "drugCautions": ["Tramadol (hội chứng serotonin với SSRI)", "Meperidine (Pethidine — serotonin syndrome với MAOIs)"],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "Xác nhận loại thuốc chống trầm cảm (SSRI vs MAOI — MAOI ngừng 2 tuần trước mổ)",
+            "Đánh giá lo âu trước mổ — cân nhắc tiền mê"
+          ]
+        },
+        {
+          "id": "alcohol-dependence",
+          "nameVn": "Nghiện rượu mạn",
+          "nameEn": "Chronic alcohol dependence",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Nguy cơ hội chứng cai rượu sau mổ (delirium tremens) — theo dõi sát 24-72h",
+            "Tăng liều thuốc mê và opioid cần thiết (dung nạp chéo)",
+            "Chức năng gan suy giảm — thận trọng thuốc chuyển hóa qua gan",
+            "Dự phòng cai rượu: Benzodiazepine theo CIWA-Ar nếu không uống rượu > 24h"
+          ],
+          "drugCautions": ["Acetaminophen liều cao (độc gan khi nghiện rượu)", "Metronidazole (không dùng đồng thời)"],
+          "monitoringNeeds": ["Thang điểm CIWA-Ar sau mổ"],
+          "preOpChecklist": [
+            "Chức năng gan: ALT, AST, GGT, PT/INR",
+            "Điện giải: Mg²⁺ (giảm thường gặp), thiamine",
+            "Tiêm Thiamine 100 mg IV trước truyền dextrose (phòng Wernicke)"
+          ]
+        },
+        {
+          "id": "opioid-dependence",
+          "nameVn": "Nghiện opioid / Đang dùng Methadone",
+          "nameEn": "Opioid dependence / Methadone",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Tiếp tục Methadone liều duy trì đến ngày mổ — không bao giờ ngừng đột ngột",
+            "Cần liều opioid cao hơn đáng kể để giảm đau sau mổ (dung nạp opioid)",
+            "Ưu tiên đa mô thức: NSAID, Paracetamol, tê vùng để giảm nhu cầu opioid",
+            "Kết hợp với điều dưỡng cai nghiện trong giai đoạn hậu phẫu"
+          ],
+          "drugCautions": ["Buprenorphine (đối kháng với opioid khác — phức tạp trong quản lý đau)"],
+          "monitoringNeeds": ["SpO₂ liên tục sau mổ nếu dùng opioid liều cao"],
+          "preOpChecklist": [
+            "Xác nhận liều Methadone hàng ngày",
+            "Xét nghiệm drug screen nếu cần",
+            "Tham khảo đội cai nghiện"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "allergic",
+      "nameVn": "Dị ứng — Miễn dịch",
+      "conditions": [
+        {
+          "id": "latex-allergy",
+          "nameVn": "Dị ứng Latex",
+          "nameEn": "Latex allergy",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "PHÒNG MỔ KHÔNG LATEX (latex-free OR) bắt buộc — thông báo tất cả nhân viên",
+            "Thay thế tất cả sản phẩm latex: găng tay vinyl/nitrile, ống xông silicone, mặt nạ không latex",
+            "Chuẩn bị sẵn Epinephrine, Hydrocortisone, Diphenhydramine đề phòng phản vệ",
+            "Bệnh nhân dị ứng latex thường dị ứng chéo với một số thực phẩm: chuối, bơ, kiwi"
+          ],
+          "drugCautions": ["Atracurium (giải phóng histamine — có thể làm nặng thêm phản ứng)"],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "Xác nhận dị ứng latex và mức độ (tiếp xúc vs hít vs toàn thân)",
+            "Chuẩn bị danh sách sản phẩm latex-free",
+            "Bệnh nhân mổ đầu tiên trong ngày — tránh bụi latex trong không khí"
+          ]
+        },
+        {
+          "id": "drug-allergy-penicillin",
+          "nameVn": "Dị ứng Penicillin / Kháng sinh beta-lactam",
+          "nameEn": "Penicillin allergy",
+          "asaMinimum": "I",
+          "anaesthesiaConsiderations": [
+            "Kháng sinh dự phòng thay thế: Clindamycin 600 mg IV hoặc Vancomycin 15 mg/kg IV",
+            "Phản ứng chéo Penicillin-Cephalosporin: < 2% — Cephalosporin thường an toàn nếu dị ứng nhẹ",
+            "Nếu tiền sử phản vệ thực sự: tránh tất cả beta-lactam, dùng Vancomycin + Gentamicin"
+          ],
+          "drugCautions": ["Penicillin", "Amoxicillin", "Ampicillin", "Cephalosporin (nếu phản vệ nặng)"],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "Xác nhận loại phản ứng: phát ban vs sốc phản vệ — khác nhau về nguy cơ",
+            "Ghi rõ vào hồ sơ và băng tay dị ứng"
+          ]
+        },
+        {
+          "id": "multi-drug-allergy",
+          "nameVn": "Dị ứng nhiều thuốc gây mê",
+          "nameEn": "Multiple anaesthetic drug allergies",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Xem xét referral đến bác sĩ dị ứng-miễn dịch để test skin trước phẫu thuật chương trình",
+            "Chuẩn bị bộ cấp cứu phản vệ đầy đủ: Epinephrine, Hydrocortisone, Diphenhydramine",
+            "Gây tê vùng/tủy sống thay thế GA nếu có thể"
+          ],
+          "drugCautions": ["Cần xác định từng thuốc dị ứng cụ thể — tránh nhóm đó"],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "Hội chẩn dị ứng-miễn dịch học trước mổ chương trình",
+            "Skin test hoặc RAST cho thuốc giãn cơ, kháng sinh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "nameVn": "Khác",
+      "conditions": [
+        {
+          "id": "malignant-hyperthermia",
+          "nameVn": "Tiền sử / Gia đình có sốt ác tính",
+          "nameEn": "Malignant hyperthermia susceptibility",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "TUYỆT ĐỐI TRÁNH: Succinylcholine và tất cả thuốc mê bốc hơi (Sevoflurane, Desflurane, Isoflurane, Halothane)",
+            "TIVA bắt buộc: Propofol + Remifentanil hoặc Fentanyl",
+            "Làm sạch máy mê: thay circuit, flush 10 phút oxy lưu lượng cao, loại bỏ vaporizer",
+            "Chuẩn bị Dantrolene 2.5 mg/kg IV (tối thiểu 36 lọ 20 mg) PHẢI CÓ SẴN TRƯỚC KHI KHỞI MÊ",
+            "Theo dõi nhiệt độ lõi liên tục, EtCO₂ — tăng đột ngột là dấu hiệu sớm nhất"
+          ],
+          "drugCautions": ["Succinylcholine (tuyệt đối tránh)", "Sevoflurane (tuyệt đối tránh)", "Desflurane (tuyệt đối tránh)", "Isoflurane (tuyệt đối tránh)", "Halothane (tuyệt đối tránh)"],
+          "monitoringNeeds": ["Nhiệt độ lõi liên tục (bắt buộc)", "EtCO₂ (tăng sớm nhất)", "CK nếu nghi ngờ"],
+          "preOpChecklist": [
+            "Xác nhận test caffeine-halothane contracture hoặc genetic testing nếu có",
+            "Chuẩn bị Dantrolene 36 lọ (720 mg) tại phòng mổ",
+            "Thông báo tất cả nhân viên phòng mổ"
+          ]
+        },
+        {
+          "id": "severe-ponv",
+          "nameVn": "Tiền sử PONV nặng (nôn sau mổ)",
+          "nameEn": "History of severe PONV",
+          "asaMinimum": "I",
+          "anaesthesiaConsiderations": [
+            "Điểm Apfel cao (≥ 3) — dùng ≥ 3 thuốc chống nôn khác cơ chế",
+            "TIVA thay vì mê bốc hơi giảm PONV đáng kể",
+            "Tránh opioid trong và sau mổ — ưu tiên đa mô thức không opioid",
+            "Phác đồ: Ondansetron 4-8 mg + Dexamethasone 8 mg + Droperidol 0.625 mg IV"
+          ],
+          "drugCautions": ["Opioid sau mổ (tăng PONV)", "Neostigmine (tăng nôn — dùng Sugammadex thay thế)"],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "Ghi nhận tiền sử PONV và say tàu xe",
+            "Bắt đầu Dexamethasone ngay khi khởi mê"
+          ]
+        },
+        {
+          "id": "difficult-airway",
+          "nameVn": "Tiền sử đặt NKQ khó",
+          "nameEn": "History of difficult intubation",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Gọi người có kinh nghiệm hỗ trợ ngay từ đầu — không cố gắng một mình",
+            "Chuẩn bị đầy đủ: video laryngoscope, fiberoptic bronchoscope, bougie, LMA ProSeal/Supreme, bộ cricothyrotomy",
+            "Đặt NKQ tỉnh bằng fiberoptic (awake fiberoptic intubation) là lựa chọn an toàn nhất nếu nghi ngờ khó nặng",
+            "Không bao giờ mất đường thở — nếu không đặt được, rút và mask thở trước khi thử lại"
+          ],
+          "drugCautions": [],
+          "monitoringNeeds": [],
+          "preOpChecklist": [
+            "Xem xét ghi chú gây mê trước đây để biết phương pháp đã dùng",
+            "Đánh giá Mallampati, mở miệng, khoảng cách giữa cằm và thanh quản, cử động cổ",
+            "Lập kế hoạch đường thở rõ ràng (primary + backup + rescue)"
+          ]
+        },
+        {
+          "id": "pregnancy",
+          "nameVn": "Thai kỳ",
+          "nameEn": "Pregnancy",
+          "asaMinimum": "II",
+          "anaesthesiaConsiderations": [
+            "Dạ dày đầy từ tuần 16 — RSI bắt buộc cho gây mê toàn thân",
+            "Tư thế nghiêng trái 15° để tránh hội chứng chèn ép tĩnh mạch chủ dưới",
+            "Tê vùng (tủy sống/NMC) ưu tiên để tránh phơi nhiễm thai nhi với thuốc mê",
+            "Tránh Thiopental, Ketamine liều cao, N2O kéo dài (tam cá nguyệt 1)"
+          ],
+          "drugCautions": ["Thiopental (category C/D)", "Succinylcholine (an toàn nhưng thận trọng)", "N2O (tránh kéo dài tam cá nguyệt 1)"],
+          "monitoringNeeds": ["Tim thai (fetal heart rate monitoring) nếu > 24 tuần và phẫu thuật không sản khoa"],
+          "preOpChecklist": [
+            "Xác nhận tuổi thai",
+            "Sản phụ khoa hội chẩn và đồng ý kế hoạch gây mê",
+            "Ranitidine 50 mg IV + Metoclopramide 10 mg IV trước mổ (giảm acid dạ dày)"
+          ]
+        },
+        {
+          "id": "premature-infant",
+          "nameVn": "Trẻ sinh non (< 37 tuần, trong vòng 60 tuần tuổi điều chỉnh)",
+          "nameEn": "Ex-premature infant",
+          "asaMinimum": "III",
+          "anaesthesiaConsiderations": [
+            "Nguy cơ ngưng thở sau mổ cao (apnea of prematurity) — theo dõi ít nhất 12-24h sau mổ",
+            "Caffeine citrate 10 mg/kg IV có thể dự phòng ngưng thở sau mổ",
+            "Hạ đường huyết và hạ thân nhiệt dễ xảy ra — kiểm soát chặt",
+            "Hội chẩn nhi sơ sinh và gây mê nhi có kinh nghiệm"
+          ],
+          "drugCautions": ["Succinylcholine (cẩn thận — tăng Kali)", "Thiopental (ức chế tim mạnh ở trẻ non)"],
+          "monitoringNeeds": ["SpO₂ liên tục 24h", "Glucose thường xuyên", "Nhiệt độ"],
+          "preOpChecklist": [
+            "Tuổi thai và tuổi điều chỉnh hiện tại",
+            "Chức năng phổi, tiền sử BPD (bệnh phổi mạn ở trẻ non)",
+            "Glucose máu trước mổ — duy trì > 2.6 mmol/L"
+          ]
+        }
+      ]
+    }
+  ]
+}

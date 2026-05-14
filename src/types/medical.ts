@@ -81,3 +81,93 @@ export interface CalculationRecord {
   inputs: Record<string, number | string>
   results: Record<string, number | string>
 }
+
+// ─── Kế hoạch gây mê ─────────────────────────────────────────────────────────
+
+export type AnaesthesiaType =
+  | 'general'      // Gây mê toàn thân
+  | 'neuraxial'    // Tê trục thần kinh (tủy sống / ngoài màng cứng)
+  | 'regional'     // Tê vùng (block thần kinh ngoại biên)
+  | 'local'        // Gây tê tại chỗ
+  | 'mac'          // Monitored Anaesthesia Care (an thần có giám sát)
+  | 'combined'     // Kết hợp (GA + regional)
+
+export type AgeUnit = 'years' | 'months' | 'days'
+
+export interface PlanPatientData extends PatientData {
+  ageValue: number      // Số tuổi theo đơn vị bên dưới
+  ageUnit: AgeUnit      // Đơn vị tuổi
+  bmi?: number
+  allergies: string[]
+  currentMedications: string[]
+}
+
+export interface SelectedSurgery {
+  specialtyId: string
+  specialtyNameVn: string
+  surgeryId: string
+  surgeryNameVn: string
+  surgeryNameEn: string
+  recommendedAnaesthesia: AnaesthesiaType
+  anaesthesiaOptions: AnaesthesiaType[]
+  position: string
+  durationMin: number
+  durationMax: number
+  urgency: 'elective' | 'urgent' | 'emergency'
+  bloodLoss: 'minimal' | 'low' | 'moderate' | 'high' | 'massive'
+  painLevel: 'mild' | 'moderate' | 'severe'
+  airwayDifficulty: 'standard' | 'shared' | 'difficult' | 'secured'
+  considerations: string[]
+}
+
+export interface SelectedComorbidity {
+  categoryId: string
+  categoryNameVn: string
+  conditionId: string
+  conditionNameVn: string
+  conditionNameEn: string
+  asaMinimum: ASAClass
+  anaesthesiaConsiderations: string[]
+  drugCautions: string[]
+  monitoringNeeds: string[]
+  preOpChecklist: string[]
+}
+
+// Đầu vào của trình tạo kế hoạch
+export interface PlanInput {
+  patient: PlanPatientData
+  surgery: SelectedSurgery
+  comorbidities: SelectedComorbidity[]
+  isEmergency: boolean
+  preferredAnaesthesia?: AnaesthesiaType  // bác sĩ có thể ghi đè
+}
+
+// Phần trong kế hoạch gây mê
+export interface PlanSection {
+  title: string
+  items: string[]
+  level?: 'info' | 'caution' | 'danger'  // highlight màu nếu cần
+}
+
+// Kế hoạch gây mê được tạo ra (rule-based Phase 1, LLM Phase 2)
+export interface GeneratedPlan {
+  anaesthesiaType: AnaesthesiaType
+  anaesthesiaTypeLabel: string
+  asaClass: ASAClass
+  sections: PlanSection[]
+  warnings: string[]       // cảnh báo đặc biệt (màu đỏ)
+  generatedAt: number      // timestamp
+  isAiGenerated: boolean   // false ở Phase 1
+}
+
+// Kế hoạch đã lưu (My Plans)
+export interface SavedPlan {
+  id: string
+  label: string            // "BN #1 — Cắt ruột thừa" — không lưu tên thật
+  createdAt: number
+  surgeryNameVn: string
+  anaesthesiaType: AnaesthesiaType
+  asaClass: ASAClass
+  input: PlanInput
+  plan: GeneratedPlan
+}

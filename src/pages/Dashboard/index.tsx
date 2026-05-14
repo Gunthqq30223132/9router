@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import {
   Pill, Activity, Droplets, Wind, Brain,
-  MessageSquare, ChevronRight, Stethoscope
+  MessageSquare, ChevronRight, Stethoscope, ClipboardList, BookOpen
 } from 'lucide-react'
 import { usePatientStore } from '@/store/patientStore'
 import { clsx } from 'clsx'
@@ -15,6 +15,13 @@ interface ToolCard {
 }
 
 const TIER1_TOOLS: ToolCard[] = [
+  {
+    label: 'Kế hoạch Gây mê',
+    sublabel: 'Wizard 3 bước · Phẫu thuật + Bệnh kèm → Kế hoạch',
+    icon: ClipboardList,
+    to: '/ke-hoach-gay-me',
+    color: 'text-teal-400 bg-teal-950 border-teal-800',
+  },
   {
     label: 'Tính liều khởi mê',
     sublabel: 'Propofol · Ketamin · Etomidate',
@@ -46,6 +53,13 @@ const TIER1_TOOLS: ToolCard[] = [
 ]
 
 const TIER2_TOOLS: ToolCard[] = [
+  {
+    label: 'Kế hoạch của tôi',
+    sublabel: 'Xem lại kế hoạch gây mê đã lưu',
+    icon: BookOpen,
+    to: '/ke-hoach-cua-toi',
+    color: 'text-indigo-400 bg-indigo-950 border-indigo-800',
+  },
   {
     label: 'Phân loại ASA',
     sublabel: 'Đánh giá tình trạng thể chất trước mổ',

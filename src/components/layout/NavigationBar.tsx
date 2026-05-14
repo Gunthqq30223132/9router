@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom'
-import { LayoutGrid, Calculator, BookOpen, MessageSquare, Settings } from 'lucide-react'
+import { LayoutGrid, ClipboardList, Calculator, BookOpen, Settings } from 'lucide-react'
 import { clsx } from 'clsx'
 
 const navItems = [
-  { to: '/',           label: 'Trang chủ', icon: LayoutGrid },
-  { to: '/tinh-lieu',  label: 'Tính liều', icon: Calculator },
-  { to: '/tinh-diem',  label: 'Chấm điểm', icon: BookOpen },
-  { to: '/tu-van-ai',  label: 'AI',         icon: MessageSquare },
-  { to: '/cai-dat',    label: 'Cài đặt',   icon: Settings },
+  { to: '/',                   label: 'Trang chủ', icon: LayoutGrid },
+  { to: '/ke-hoach-gay-me',    label: 'Kế hoạch',  icon: ClipboardList },
+  { to: '/tinh-lieu/khoi-me',  label: 'Tính liều', icon: Calculator },
+  { to: '/ke-hoach-cua-toi',   label: 'Đã lưu',    icon: BookOpen },
+  { to: '/cai-dat',            label: 'Cài đặt',   icon: Settings },
 ]
 
 export function NavigationBar() {
